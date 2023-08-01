@@ -1,0 +1,57 @@
+
+#navbar a, .navbar a:focus{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+    transition: 0.3s;
+    padding: 0 3px;
+    
+
+}
+#navbar a:hover{
+    color: #106eea;
+}
+
+.navbar-nav li a{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+}
+.navbar-nav li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 25px;
+    height: 3px;
+    width: 0px;
+    background: #106eea;
+    border-radius: 12px;
+    transition: all 0.9s ease;
+    
+}
+
+.navbar-nav li a:hover:before{
+    width: 100%;
+}
+
+
+.navbar-nav li a{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+#navbar{
+    gap: 20px;
+}
+
