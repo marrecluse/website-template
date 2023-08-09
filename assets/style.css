@@ -647,41 +647,80 @@ section{
 
 /* Team section */
 
-#team .member{
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
-    margin-bottom: 20px;
+--------------------------------------------------------------*/
+.team {
+  padding: 60px 0;
 }
 
-#team .member{
-    position: relative;
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+
 }
+
+.team .member .member-img {
+    overflow: hidden;
+    position: relative;
+
+}
+  
+
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+}
+  
+
+
 .team .member .social {
     position: absolute;
     right: 0;
     bottom: 30px;
     left: 0;
-    opacity: 1;
+    opacity: 0;
     transition: ease-in-out 0.3s;
     text-align: center;
 }
-/* 
-#team .member .social a{
-    
+ 
+.team .member .social a{
+    transition: color 0.3s;
+    color: #222222;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    background: rgba(16, 110, 234, 0.8);
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+.team .member .social a:hover{
+    background: #3b8af2;
+}
 
-} */
+.team .member .social i{
+    font-size: 18px;
+}
 
 #team .member .member-info{
     padding: 25px 15px;
-    margin-left: 0;
 }
 
 #team .member .member-info h4{
     font-size: 18px;
     font-weight: 700; 
-    margin-bottom: 0 !important;
-    text-align: start;
+    margin-bottom: 5px;
+    color: #222222;
+
 
 }
 #team .member .member-info span{
@@ -691,6 +730,107 @@ section{
     display: block;
 
 }
+
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+}
+
+.team .member:hover .social{
+    opacity: 1;
+    bottom: 15px;
+}
+
+/* Pricing Section */
+
+.pricing .box{
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.pricing .box h3{
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    background: #f8f8f8;
+}
+
+.pricing .box h4{
+    font-size: 36px;
+    color: #106eea;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pricing .box h4 span{
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pricing .box ul{
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+.pricing .box ul li{
+    padding-bottom: 16px;
+}
+
+.pricing .btn-wrap{
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.pricing .btn-buy{
+    color: #fff;
+    background: #106eea;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.pricing .box ul .na{
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.pricing .featured h3{
+    color: #fff;
+    background: #106eea;
+}
+
+.pricing .advanced{
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+444444444444444444    padding: 1px 0 3px 0;
+    background: #106eea;
+    color: #fff;
+}
+
+
 
 
 
