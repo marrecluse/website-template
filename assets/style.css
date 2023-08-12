@@ -23,7 +23,10 @@ body{
 
 #header{
     background: #fff;
-    height: 86px;
+    transition: all 0.3s;
+
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+
 }
 #header .logo{
     font-size: 30px;
@@ -84,20 +87,22 @@ a{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 25px;
     height: 3px;
     width: 0px;
     background: #106eea;
     border-radius: 12px;
-    transition: all 0.4s ease;
+    /* transition: all 0.8s ease-in; */
+    transition: width 0.4s ease-in, left 0.4s ease-in;
 
 
 }
 
 .navbar-nav li a:hover:before{
     width: 100%;
-}
+}   
 
 
 .navbar-nav li a{
@@ -109,6 +114,10 @@ a{
 #navbar{
     gap: 20px;
 }
+#navbar li a{
+    text-align: center;
+    justify-content: center;
+}
 
 
 
@@ -117,18 +126,27 @@ a{
 #hero{
     width: 100%;
     height: 75vh;
-    background: url('../assets/images/bg.jpg');
+    background: url('../assets/images/bg2.jpg');
     background-size: cover;
     position: relative;
+}
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 #hero h1{
 
     margin: 0;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 200;
     line-height: 56px;
-    color: #222222;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
 
 
@@ -136,12 +154,13 @@ a{
 
 #hero h1 span{
     color: #106eea;
+    font-weight: 900;
 }
 #hero h2{
-    color: #555555;
+    color: whitesmoke;
     margin: 5px 0 30px 0;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 #hero .btn-get-started{
@@ -163,7 +182,7 @@ a{
     font-family: 'Roboto',sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #222222;
+    color: #dddddd;
     display: flex;
     align-items: center;
     margin-left: 25px;
@@ -745,7 +764,8 @@ section{
 
 /* Pricing Section */
 
-.pricing .box{
+
+.pricing .box {
     padding: 20px;
     background: #fff;
     text-align: center;
@@ -753,8 +773,7 @@ section{
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-
-}
+  }
 
 .pricing .box h3{
     margin: -20px -20px 20px -20px;
@@ -825,18 +844,33 @@ section{
     right: -68px;
     transform: rotate(45deg);
     z-index: 1;
-444444444444444444    padding: 1px 0 3px 0;
+    padding: 1px 0 3px 0;
     background: #106eea;
     color: #fff;
 }
 
 
+/* FAQ section */
 
+.faq .question{
+    color: #106eea;
+    display: block;
+    position: relative;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 24px;
+    padding-right: 25px;
+    text-align: left;
+}
 
+.faq .faq-list i{
+    font-size: 16px;
+    
+}
 
-
-
-
+.faq .faq-list .collapsed{
+    color: black;
+}
 
 
 

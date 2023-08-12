@@ -63,7 +63,7 @@
 
     <!-- Navbadr -->
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-light">
+    <nav id="header" class="sticky-top navbar navbar-expand-lg navbar-light">
         <div class="container">
            
             <h1 class="logo">
@@ -80,7 +80,8 @@
 
 
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul id="navbar" class="navbar-nav ms-auto d-flex">
+               
+                    <ul id="navbar" class="navbar-nav ms-auto d-flex">
                     <li class="nav-item">
                         <a href="#" class="nav-link scrollto">Home</a>
                     </li>
@@ -104,10 +105,10 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="dropdown-toggle nav-link scrollto" data-bs-toggle="dropdown">Products</a>
                         <div class="dropdown-menu">
-                            <a href="" class="dropdown-item">Laptop</a>
-                            <a href="" class="dropdown-item">Computers</a>
-                            <a href="" class="dropdown-item">Tech Gadgets</a>
-                            <a href="" class="dropdown-item">Home Appliances</a>
+                            <a href="#" class="dropdown-item">Laptop</a>
+                            <a href="#" class="dropdown-item">Computers</a>
+                            <a href="#" class="dropdown-item">Tech Gadgets</a>
+                            <a href="#" class="dropdown-item">Home Appliances</a>
                         </div>
                     </li>
 
@@ -903,12 +904,12 @@
             </h3>
             <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
-    </div>
+    
 
     <div class="row">
         <div class="col-lg-3 col-md-6">
 
-            <div class="box">
+            <div class="box mb-3">
                 <h3>Free</h3>
                 <h4>
                     <sup>$</sup>
@@ -1002,6 +1003,7 @@
         </div>
         
     </div>
+    </div>
 
 
 
@@ -1011,6 +1013,45 @@
 
 </section>
 
+<section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+            <h2>F.A.Q</h2>
+            <h3>
+                Frequently Asked <span>Questions</span>
+            </h3>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        
+            <div class="row">
+                <div class="col-xl-10">
+                    <ul class="mt-5 faq-list list-unstyled">
+                        <li>
+
+                            <div class="question" data-bs-toggle="collapse" role="button" href="#faq1">
+                                <i class=" text-warning bi-chevron-down icon-show"></i>
+                                <i class=" text-warning bi-chevron-up icon-close"></i>
+                                Lorem ipsum dolor
+                              
+                            </div>
+                            <div id="faq1" class="collapse">
+                               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis beatae dolor repellendus atque accusamus placeat vero, voluptatibus</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        
+        </div>
+
+
+
+
+
+</section>
 
 
 
@@ -1094,10 +1135,24 @@ $('.filter-button-group').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
+    var $obj=$('#header');
+    $(window).scroll(function (event){
+        var y= $(this).scrollTop();
+        
+        if(y > 55){
+            $obj.addClass('fixed-top');
+
+        }
+        else{
+            $obj.removeClass('fixed-top');
+        }
+
+
+    });
+
+
+
 </script>
-
-
-
 
 </body>
 </html>
