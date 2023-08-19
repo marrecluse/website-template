@@ -852,25 +852,133 @@ section{
 
 /* FAQ section */
 
-.faq .question{
-    color: #106eea;
+.faq .faq-list .question{
+    color: #000;
     display: block;
-    position: relative;
     font-weight: 400;
     cursor: pointer;
     line-height: 24px;
     padding-right: 25px;
-    text-align: left;
+    text-align: start;
+    font-size: 20px;
+    margin-left: 22px;
+    position: relative;
+    width: 100%;
+}
+
+.faq .faq-list .question:hover{
+    color: #106eea;
+}
+
+.faq .faq-list .question h5{
+    margin-left: 20px;
 }
 
 .faq .faq-list i{
-    font-size: 16px;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    right: 100%;
+      
+}
+
+.faq .faq-list li{
+    border-bottom: 1px solid #d4e5fc;
+    margin-bottom: 5rem;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.faq .faq-list .icon-show{
+    display: none;
+
+}
+.faq .faq-list p{
     
+    text-align: justify;
+    margin-left: 3rem;
+    
+}
+
+.faq .faq-list .collapsed .icon-show{
+    display: inline-block;
+    transition: o.6s;
+}
+
+
+.faq .faq-list .collapsed .icon-close{
+    display: none;
+    transition: 0.6s;
 }
 
 .faq .faq-list .collapsed{
     color: black;
 }
+
+
+/* Contact section */
+
+
+/* .contact .info-box{
+    padding: 20px 0 30px 0;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+} */
+
+.contact .info-box {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+    padding: 20px 0 30px 0;
+
+}
+.contact .info-box i {
+    display: inline-block;
+    font-size: 32px;
+    width: 52px;
+    height: 52px;
+    font-weight: bolder;
+    color: #106eea;
+    border-radius: 50%;
+    border: 2px dotted #b3d1fa;
+}
+
+.contact .row h3{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    color: #777777;
+    margin: 10px 0;
+}
+
+.php-email-form{
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.contact .php-email-form .form-group{
+    margin-bottom: 20px;
+}
+
+.contact .php-email-form input{
+    padding: 10px 15px;
+}
+
+.contact .php-email-form button{
+    background: #106eea;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+
+
+
+
+
 
 
 
